@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+}
+
+body {
+    width: 100%;
+    min-height: 100dvh;
+    padding-top: 20px;
+    background:
+        radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+        radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+        radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+        radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+        radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.main {
+    width: 100%;
+    margin: 0%;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    /* border: 2px solid black; */
+    /* background-color: rgba(176, 153, 153, 0.2); */
+    /* border: 1px solid #ffffff80; */
+    /* -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px); */
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    font-family: "Fugaz One", sans-serif;
+    font-size: 2.5rem;
+    /* text-decoration: underline black;
+    cursor: pointer; */
+}
+
+form {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+input {
+    color: black;
+    padding: 8px;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius: 4px;
+    box-shadow: 3px 3px black;
+}
+
+input:focus {
+    outline: none;
+}
+
+#addBtn {
+    padding: 0.5rem 2rem;
+    background-color: #888;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 3px solid black;
+    cursor: pointer;
+    box-shadow: 3px 3px black;
+}
+
+#addBtn:hover {
+    transform: translate(-8px, -8px);
+    box-shadow: 0px 0px;
+}
+
+#delAll {
+    padding: 0.5rem 2rem;
+    background-color: red;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 3px solid black;
+    cursor: pointer;
+    box-shadow: 3px 3px black;
+}
+
+#delAll:hover {
+    transform: translate(-8px, -8px);
+    box-shadow: 0px 0px;
+}
+
+.btn {
+    width: fit-content;
+    background-color: orangered;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    box-shadow: 8px 8px black;
+}
+
+/* hidden and block class for taskDiv element configured in javascript */
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+    width: 90%;
+    padding: 16px;
+}
+
+#taskList {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 22px;
+}
+
+#taskList li {
+    width: 100%;
+    list-style: none;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 4px;
+    background-color: rgba(176, 153, 153, 0.2);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+}
+
+.liBtn {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+    align-items: center;
+    padding: 8px;
+}
+
+.editBtn {
+    padding: 0.5rem 2rem;
+    background-color: #888;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+    color: whitesmoke;
+}
+
+.deleteBtn {
+    padding: 0.5rem 2rem;
+    background-color: red;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+    color: whitesmoke;
+}
+
+.liBtn button:hover {
+    box-shadow: 0px 0px black;
+    transform: translate(3px, 3px);
+}

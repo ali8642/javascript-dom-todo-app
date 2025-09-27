@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript DOM ToDo App</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>To-Do App</h1>
+        <form>
+            <input type="text" id="toDoInput" placeholder=" Enter your task here...">
+            <div class="btn"><button type="submit" id="addBtn" onclick="addTask(event)">Add Task</button></div>
+            <div class="btn"><button type="reset" id="delAll" onclick="deleteAllTasks()">Delete All</button></div>
+        </form>
+
+        <ul id="taskList"></ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
